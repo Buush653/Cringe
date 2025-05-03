@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cringe Word Generator</title>
+    <style>
+        /* Basic Styling */
+        body {
+            font-family: 'Comic Sans MS', 'Chalkboard SE', 'Marker Felt', cursive; /* Intentionally cringe font choice */
+            background: linear-gradient(45deg, #ff6ec4, #7873f5); /* Flashy gradient */
+            color: #fff;
+            text-align: center;
+            padding: 50px;
+            min-height: 100vh;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+            margin-bottom: 30px;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            font-family: inherit; /* Use the body's cringe font */
+            background-color: #f5f749; /* Bright yellow */
+            color: #e01e5a; /* Hot pink text */
+            border: 3px dashed #ff6ec4; /* Dashed border */
+            border-radius: 15px;
+            cursor: pointer;
+            transition: transform 0.2s ease, background-color 0.2s ease;
+            margin-bottom: 40px;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #fff; /* White on hover */
+            transform: scale(1.1) rotate(-3deg); /* Slight scale and rotate */
+        }
+
+        #output {
+            margin-top: 20px;
+            font-size: 3em;
+            font-weight: bold;
+            color: #f5f749; /* Match button bg */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            min-height: 60px; /* Prevent layout jump */
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.2); /* Slight dark background */
+            border-radius: 10px;
+            display: inline-block; /* Fit content */
+            max-width: 90%; /* Ensure text wraps if too long */
+            word-wrap: break-word; /* Break long words if needed */
+        }
+
+        /* Add a little disclaimer */
+        footer {
+            margin-top: 50px;
+            font-size: 0.8em;
+            color: rgba(255, 255, 255, 0.7);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🚨 Mega Cringe Word Generator 🚨</h1>
+
+    <button id="generateBtn">Generate MORE Cringe!</button>
+
+    <div id="output">
+        <!-- Cringe word will appear here -->
+        Click the button... if you dare.
+    </div>
+
+    <footer>
+        Disclaimer: "Cringe" is subjective. Have fun! Or don't. Whatever.
+    </footer>
+
+    <script>
+        // List of "cringe" words/phrases (EXPANDED!)
+        const cringeWords = [
+            "Yeet!",
+            "Oof Size: Large",
+            "Sus",
+            "Bruh Moment",
+            "No Cap",
+            "Vibes",
+            "Based",
+            "Simp",
+            "Cheugy",
+            "Lit Fam",
+            "Basic",
+            "Extra AF",
+            "Glow Up",
+            "Thirsty",
+            "Spill the Tea",
+            "Adulting is Hard",
+            "Big Mood",
+            "Slay Queen!",
+            "Rizz",
+            "It's Giving...",
+            "Finna",
+            "Bet.",
+            "Poggers",
+            "Dank Meme",
+            "Fleek",
+            "YOLO",
+            "Doggo", // Added
+            "Pupper", // Added
+            "Smol Bean", // Added
+            "Henlo Fren", // Added
+            "Awkward Turtle", // Added
+            "I Can't Even", // Added
+            "Totes Adorbs", // Added
+            "Amazeballs", // Added
+            "Cray Cray", // Added
+            "Hangry", // Added
+            "Stay Woke", // Added (often used ironically)
+            "On Fleek", // Added variant
+            "Yas Queen!", // Added variant
+            "Living My Best Life", // Added
+            "Sorry Not Sorry", // Added
+            "Doomer", // Added
+            "Boomer", // Added (when used dismissively)
+            "Zoomer", // Added
+            "Cursed Image", // Added
+            "Epic Fail", // Added (older internet)
+            "Pwned", // Added (older internet)
+            "Wassup?", // Added (older internet, Budweiser style)
+            "Nom Nom Nom", // Added
+            "Keep Calm and Carry On [Variant]", // Added
+            "Netflix and Chill?", // Added
+            "Felt Cute, Might Delete Later", // Added
+            "It's the [X] for Me", // Added
+            "Understand the Assignment", // Added
+            "Girlboss", // Added (can be ironic/cringe)
+            "Bae", // Added
+            "Main Character Energy" // Added
+        ];
+
+        // Get references to the button and the output div
+        const generateButton = document.getElementById('generateBtn');
+        const outputDiv = document.getElementById('output');
+
+        // Function to generate and display a random word
+        function generateCringe() {
+            // Get a random index from the cringeWords array
+            const randomIndex = Math.floor(Math.random() * cringeWords.length);
+
+            // Get the word at that random index
+            const randomWord = cringeWords[randomIndex];
+
+            // Display the random word in the output div
+            outputDiv.textContent = randomWord;
+        }
+
+        // Add an event listener to the button
+        // When the button is clicked, call the generateCringe function
+        generateButton.addEventListener('click', generateCringe);
+
+    </script>
+
+</body>
+</html>
