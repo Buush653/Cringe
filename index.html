@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cringe Word Generator</title>
+    <title>ULTIMATE Cringe Word Generator</title>
     <style>
         /* Basic Styling */
         body {
             font-family: 'Comic Sans MS', 'Chalkboard SE', 'Marker Felt', cursive; /* Intentionally cringe font choice */
-            background: linear-gradient(45deg, #ff6ec4, #7873f5); /* Flashy gradient */
+            background: linear-gradient(45deg, #ff6ec4, #7873f5, #f5f749); /* Even more gradient */
             color: #fff;
             text-align: center;
             padding: 50px;
@@ -21,39 +21,47 @@
         }
 
         h1 {
-            font-size: 2.5em;
-            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+            font-size: 2.8em; /* Slightly larger */
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
             margin-bottom: 30px;
+            color: #ffff00; /* Bright yellow heading */
+            background-color: rgba(0,0,0,0.2);
+            padding: 10px 20px;
+            border-radius: 15px;
+            display: inline-block;
         }
 
         button {
-            padding: 15px 30px;
-            font-size: 1.2em;
+            padding: 18px 35px; /* Slightly larger */
+            font-size: 1.4em; /* Slightly larger */
             font-family: inherit; /* Use the body's cringe font */
-            background-color: #f5f749; /* Bright yellow */
-            color: #e01e5a; /* Hot pink text */
-            border: 3px dashed #ff6ec4; /* Dashed border */
-            border-radius: 15px;
+            background-color: #ff1493; /* Deep Pink */
+            color: #ffffff; /* White text */
+            border: 4px outset #ff69b4; /* Hot Pink outset border */
+            border-radius: 20px;
             cursor: pointer;
             transition: transform 0.2s ease, background-color 0.2s ease;
             margin-bottom: 40px;
             font-weight: bold;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
         }
 
         button:hover {
-            background-color: #fff; /* White on hover */
-            transform: scale(1.1) rotate(-3deg); /* Slight scale and rotate */
+            background-color: #ff69b4; /* Hot Pink on hover */
+            border-color: #ff1493;
+            transform: scale(1.15) rotate(5deg); /* More dramatic hover */
         }
 
         #output {
             margin-top: 20px;
-            font-size: 3em;
+            font-size: 3.5em; /* Larger text */
             font-weight: bold;
             color: #f5f749; /* Match button bg */
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-            min-height: 60px; /* Prevent layout jump */
-            padding: 20px;
-            background-color: rgba(0, 0, 0, 0.2); /* Slight dark background */
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
+            min-height: 80px; /* Prevent layout jump */
+            padding: 25px;
+            background-color: rgba(0, 0, 0, 0.3); /* Darker background */
+            border: 5px dotted #fff; /* Dotted white border */
             border-radius: 10px;
             display: inline-block; /* Fit content */
             max-width: 90%; /* Ensure text wraps if too long */
@@ -63,29 +71,33 @@
         /* Add a little disclaimer */
         footer {
             margin-top: 50px;
-            font-size: 0.8em;
-            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9em;
+            color: rgba(255, 255, 255, 0.8);
+            background-color: rgba(0,0,0,0.1);
+            padding: 5px 10px;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
 
-    <h1>🚨 Mega Cringe Word Generator 🚨</h1>
+    <h1>☢️ ULTIMATE Cringe Word Generator ☢️</h1>
 
-    <button id="generateBtn">Generate MORE Cringe!</button>
+    <button id="generateBtn">UNLEASH THE CRINGE!</button>
 
     <div id="output">
         <!-- Cringe word will appear here -->
-        Click the button... if you dare.
+        Prepare yourself...
     </div>
 
     <footer>
-        Disclaimer: "Cringe" is subjective. Have fun! Or don't. Whatever.
+        Warning: May cause secondhand embarrassment. Use responsibly.
     </footer>
 
     <script>
-        // List of "cringe" words/phrases (EXPANDED!)
+        // List of "cringe" words/phrases (MASSIVELY EXPANDED + User List + Deduplicated)
         const cringeWords = [
+            // Original + Second Batch + User List (Deduplicated)
             "Yeet!",
             "Oof Size: Large",
             "Sus",
@@ -112,38 +124,127 @@
             "Dank Meme",
             "Fleek",
             "YOLO",
-            "Doggo", // Added
-            "Pupper", // Added
-            "Smol Bean", // Added
-            "Henlo Fren", // Added
-            "Awkward Turtle", // Added
-            "I Can't Even", // Added
-            "Totes Adorbs", // Added
-            "Amazeballs", // Added
-            "Cray Cray", // Added
-            "Hangry", // Added
-            "Stay Woke", // Added (often used ironically)
-            "On Fleek", // Added variant
-            "Yas Queen!", // Added variant
-            "Living My Best Life", // Added
-            "Sorry Not Sorry", // Added
-            "Doomer", // Added
-            "Boomer", // Added (when used dismissively)
-            "Zoomer", // Added
-            "Cursed Image", // Added
-            "Epic Fail", // Added (older internet)
-            "Pwned", // Added (older internet)
-            "Wassup?", // Added (older internet, Budweiser style)
-            "Nom Nom Nom", // Added
-            "Keep Calm and Carry On [Variant]", // Added
-            "Netflix and Chill?", // Added
-            "Felt Cute, Might Delete Later", // Added
-            "It's the [X] for Me", // Added
-            "Understand the Assignment", // Added
-            "Girlboss", // Added (can be ironic/cringe)
-            "Bae", // Added
-            "Main Character Energy" // Added
+            "Doggo",
+            "Pupper",
+            "Smol Bean",
+            "Henlo Fren",
+            "Awkward Turtle",
+            "I Can't Even",
+            "Totes Adorbs",
+            "Amazeballs",
+            "Cray Cray",
+            "Hangry",
+            "Stay Woke",
+            "On Fleek",
+            "Yas Queen!",
+            "Living My Best Life",
+            "Sorry Not Sorry",
+            "Doomer",
+            "Boomer",
+            "Zoomer",
+            "Cursed Image",
+            "Epic Fail",
+            "Pwned",
+            "Wassup?",
+            "Nom Nom Nom",
+            "Keep Calm and Carry On [Variant]",
+            "Netflix and Chill?",
+            "Felt Cute, Might Delete Later",
+            "It's the [X] for Me",
+            "Understand the Assignment",
+            "Girlboss",
+            "Bae",
+            "Main Character Energy",
+            "Cringey",
+            "Lit",
+            "Fam",
+            "Slay",
+            "GOAT",
+            "Savage",
+            "Extra",
+            "Stan",
+            "Flex",
+            "Woke",
+            "Clout",
+            "Vibe",
+            "Aesthetic",
+            "Lowkey",
+            "Highkey",
+            "Salty",
+            "Shook",
+            "Tea",
+            "Spill",
+            "Snacc",
+            "Sksksk",
+            "And I oop",
+            "Yawn",
+            "Periodt",
+            "Gucci",
+            "Hundo P",
+            "Cap",
+            "Drip",
+            "Glow-up",
+            "Iconic",
+            "Slaps",
+            "Bloop",
+            "Eyeroll",
+            "Whatevs",
+            "Totes",
+            "Adorbs",
+            "Obvi",
+            "Legit",
+            "TBH",
+            "AF",
+            "Swag",
+            "Hella",
+            "Baddie",
+            "Ate",
+            "Delulu",
+            "Solulu",
+            "Main character",
+            "Side character",
+            "NPC",
+            "FOMO",
+            "JOMO",
+            "LMAO",
+            "ROFL",
+            "Yeeted",
+            "Big yikes",
+            "Smh",
+            "Ick",
+            "Sliving",
+            "Werk",
+            "Yas",
+            "Kween",
+            "Fire",
+            "Bussin",
+            "Snack",
+            "Thicc",
+            "UwU",
+            "Rawr",
+            "Meh",
+            "Bloopers",
+            "Quirky",
+            "Random",
+            "Epic",
+            "Fail",
+            "Win",
+            "Squad",
+            "Goals",
+            "Ship",
+            "OTP",
+            "Canon",
+            "Fandom",
+            "Triggered",
+            "Problematic",
+            "Receipts",
+            "Shade"
+            // Note: Some words like "Extra", "Tea", "Spill" might appear twice if phrasing differs (e.g., "Extra AF" vs "Extra").
+            // The deduplication process handles exact matches.
         ];
+
+        // Deduplicate the list just in case (using Set for efficiency)
+        const uniqueCringeWords = [...new Set(cringeWords)];
 
         // Get references to the button and the output div
         const generateButton = document.getElementById('generateBtn');
@@ -151,11 +252,11 @@
 
         // Function to generate and display a random word
         function generateCringe() {
-            // Get a random index from the cringeWords array
-            const randomIndex = Math.floor(Math.random() * cringeWords.length);
+            // Get a random index from the uniqueCringeWords array
+            const randomIndex = Math.floor(Math.random() * uniqueCringeWords.length);
 
             // Get the word at that random index
-            const randomWord = cringeWords[randomIndex];
+            const randomWord = uniqueCringeWords[randomIndex];
 
             // Display the random word in the output div
             outputDiv.textContent = randomWord;
@@ -164,6 +265,9 @@
         // Add an event listener to the button
         // When the button is clicked, call the generateCringe function
         generateButton.addEventListener('click', generateCringe);
+
+        // Optional: Generate a word on page load
+        // generateCringe();
 
     </script>
 
